@@ -36,8 +36,8 @@ export const ClassList: FC<ClassListProps> = ({ attributes }) => {
             <div
               key={className}
               onClick={() => handleOpen(className)}
-              className={`cursor-pointer p-2 transition-colors rounded text-white ${
-                meetsRequirements ? 'bg-green-500' : ''
+              className={`cursor-pointer p-2 transition-colors text-white border-b border-gray-300 ${
+                meetsRequirements ? 'bg-green-500 rounded border-b-0' : ''
               }`}
             >
               {className}

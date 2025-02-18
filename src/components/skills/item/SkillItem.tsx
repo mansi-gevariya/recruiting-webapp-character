@@ -21,9 +21,9 @@ export const SkillItem: FC<SkillItemProps> = ({
 }) => {
   return (
     <div className="flex items-center justify-between p-2 border-b border-gray-300">
-      <div className="w-1/3">
+      <div className="w-2/3">
         <div className="font-medium">{ skillName }</div>
-        <div className="text-xs text-gray-600">
+        <div className="text-xs text-white">
           { relatedAttribute } Modifier:{ ' ' }
           { attributeModifier >= 0 ? `+${ attributeModifier }` : attributeModifier }
         </div>

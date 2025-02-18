@@ -13,11 +13,11 @@ interface CharacterProps {
 }
 
 export const CharacterItem: FC<CharacterProps> = ({
-                                                character,
-                                                index,
-                                                updateAttribute,
-                                                updateSkill,
-                                              }) => {
+  character,
+  index,
+  updateAttribute,
+  updateSkill,
+}) => {
   return (
     <div className="mb-8 border p-4 rounded">
       <h2 className="text-2xl font-bold mb-4">{ character.name }</h2>
