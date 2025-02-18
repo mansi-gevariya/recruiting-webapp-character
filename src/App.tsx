@@ -1,23 +1,15 @@
-import { useState } from 'react';
 import './App.css';
-import { ATTRIBUTE_LIST, CLASS_LIST, SKILL_LIST } from './consts.js';
-
+import { CharacterList } from './components/character/list/CharacterList';
 
 function App() {
-  const [num, setNum] = useState<number>(0);
   return (
-    <div className="App">
+    <div className="App py-6">
       <header className="App-header">
-        <h1>React Coding Exercise</h1>
+        <h1>Build your characters</h1>
       </header>
-      <section className="App-section">
-        <div>
-          Value:
-          {num}
-          <button>+</button>
-          <button>-</button>
-        </div>
-      </section>
+      <div className="container mx-auto">
+        <CharacterList />
+      </div>
     </div>
   );
 }
